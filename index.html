@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Gaman</title>
+    <link rel="shortcut icon" href="img/Gaman_Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script defer src="menu.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+
+            <a href="index.html" class="logo"><img src="img/Gaman_Logo.png" class="logo_gaman" alt="LogoGaman"></a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                  </svg>
+              </button>
+
+            <ul class="nav-menu">
+                <li class="nav-menu_item"><a href="#" class="nav-menu_link nav-menu_link_active">Inicio</a></li>
+                <li class="nav-menu_item"><a href="nosotros.html" class="nav-menu_link">Nosotros</a></li>
+                <li class="nav-menu_item"><a href="contactanos.html" class="nav-menu_link">Contacto</a></li>
+                <li class="nav-menu_item"><a href="login.html" class="nav-menu_link">Login</a></li>
+                <li class="nav-menu_item"><a href="#" class="nav-menu_link">Admin</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1 class="titulo">SEGURO AUTOMOTOR</h1>
+
+        <section class="container-slider">
+            <div class="slider" id="slider">
+
+                <div class="slider-section">
+                    <img src="img/Slider/slider-1.jpg" class="slider-img">
+                    <div class="centrado">ASISTENCIA OPORTUNA CON AJUSTADORES CALIFICADOS</div>
+                  </div>
+
+                <div class="slider-section">
+                    <img src="img/Slider/slider-2.jpg" alt="" class="slider-img">
+                    <div class="centrado">EL MEJOR ACUERDO CON LA MENOR INVERSIÓN</div>
+                </div>
+
+                <div class="slider-section">
+                    <img src="img/Slider/slider-3.jpg" alt="" class="slider-img">
+                    <div class="centrado centrado_abajo">SEGURIDAD Y VERIFICACIÓN EN LINEA CON ELEMENTOS ANTI-FRAUDES EN LA PÓLIZA</div>
+                </div>
+
+                <div class="slider-section">
+                    <img src="img/Slider/slider-4.jpg" alt="" class="slider-img">
+                    <div class="centrado">CABINA Y ASISTENCIA A CLIENTES 7x24</div>
+                </div>
+
+            </div>
+
+            <div class="slider-btn slider-btn__left" id="btn-left"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <polyline points="15 6 9 12 15 18" />
+              </svg></div>
+            <div class="slider-btn slider-btn__right" id="btn-right"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <polyline points="9 6 15 12 9 18" />
+              </svg></div>
+        </section>
+    </main>
+
+    <script src="slider.js"></script>
+</body>
+</html>

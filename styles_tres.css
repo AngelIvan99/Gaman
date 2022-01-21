@@ -1,0 +1,262 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Itim', cursive;
+    background: #2f3542;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* No Scrollbar */
+    overflow: hidden;
+}
+
+.form-box {
+    width: 300px;
+    padding: 40px;
+    background: #fff;
+    text-align: center;
+    margin: auto 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.3);
+}
+
+.form-title {
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 800px;
+}
+
+.form-box input[type="text"], .form-box input[type="password"], .form-box .boton[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #032554;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.form-box input[type="text"]:focus, .form-box input[type="password"]:focus {
+    width: 280px;
+    border-color: #1B456B;
+    font-size: 100%;
+}
+
+.form-box .boton[type="submit"] {
+    border: 0;
+    background: #1B456B;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #032554;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.form-box .boton[type="submit"]:hover {
+    background: #2f3542;
+    border: 2px solid #1B456B;
+}
+
+@media (max-width: 400px)  {
+    .form-box {
+        width: 250px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .form-box input[type="text"]:focus, .form-box input[type="password"]:focus {
+        width: 230px;
+        border-color: #ffffff;
+    }
+}
+
+@media (max-width: 350px)  {
+    .form-box {
+        width: 200px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .form-box input[type="text"], .form-box input[type="password"], .form-box .boton[type="submit"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #2f3542;
+        padding: 14px 0px;
+        width: 90%;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+    }
+
+    .form-box input[type="text"]:focus, .form-box input[type="password"]:focus {
+        width: 100%;
+        border-color: #ffffff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Header y Nav*/
+
+.header{
+    background: #1B456B;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.logo{
+    display: flex;
+    padding: 0 40px;
+    line-height: 40px;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px !important;
+    list-style: none;
+}
+
+.nav-menu_item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu_link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu_link:hover, .nav-menu_link_active{
+    background-color: #032554;
+    transition: 0.5s;
+}
+
+.nav-toggle {
+  color: black;
+  background: none;
+  border: none;
+  height: 24px;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 0px;
+  cursor: pointer;
+  margin-top: 8px;
+
+  display: none;
+  }
+
+i{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+@media (max-width: 900px)  {
+
+    body{
+        padding-top: 70px;
+    }
+
+    .logo{
+        padding: 0 20px;
+        line-height: 60px;
+    }
+
+    .header{
+        height: 60px;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px !important;
+        background-color: #2c3e50;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: 0.5s;
+    }
+
+    .nav-menu_item{
+        line-height: 70px;
+    }
+
+    .nav-menu_link_active{
+        background-color: none;
+    }
+
+    .nav-menu_link:hover{
+        background-color: #032554;
+        transition: 0.5s;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible{
+        left: 0 !important;
+    }
+
+    .logo_gaman{
+        width: 205px;
+    }
+}
+
+@media (max-width: 300px) {
+    .logo{
+        padding: 0 0px;
+        line-height: 60px;
+    }
+}
+
+ul{
+    margin: 0 !important;
+}
